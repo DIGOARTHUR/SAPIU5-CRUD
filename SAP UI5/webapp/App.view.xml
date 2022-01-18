@@ -1,0 +1,45 @@
+<mvc:View
+	controllerName="Quickstart.App"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<App>
+    
+		<Page title="Agenda" showNavButton="true" navButtonTap="handleNavBack">
+    <content>
+  <HBox justifyContent="">
+    <VBox alignItems="Center">
+    <core:Icon src="sap-icon://add"> </core:Icon>
+    <Label text="SAPUI5 Tutorial" class="myfont"/>
+    <Label text="small paragraph"/>
+    <HBox>
+		<Button
+        text="Click me"
+        width="100%"
+        press="handleButtonPress"
+        >
+        </Button>  
+
+    <Input
+    id="idMyInput"
+    valueLiveUpdate="true"
+    width="50%"
+    />
+    </HBox>
+    </VBox>
+   
+
+ </HBox>
+ </content>
+<footer>
+<Toolbar>
+<content>
+<ToolbarSpacer></ToolbarSpacer>
+<Button text="SAVE" press="handleButtonPress"> </Button>
+<ToolbarSpacer></ToolbarSpacer>
+</content>
+</Toolbar>
+    </footer>    
+		</Page>
+	</App>
+</mvc:View>
