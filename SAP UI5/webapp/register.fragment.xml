@@ -1,0 +1,26 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form"
+>
+
+<Dialog>
+  <f:SimpleForm  maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" title="Formulário de Registro" labelSpanM="2" labelSpanL="2" emptySpanL="0" emptySpamM="0" columnsM="1" columnsL="1" class="editableForm">
+              <f:content >
+                <core:Icon src="sap-icon://person-placeholder" size="3em">
+                </core:Icon>
+                <Label text="Nome"/>
+                <Input value="{/namePerson}" placeholder="Ex.: João da Silva"/>
+
+                <Label text="Endereço"/>
+                <Input value="{/address}" placeholder="Ex.: Rua xx  Av. xx"/>
+
+                <Label text="Telefone"/>
+                <Input value="{/phone}" placeholder="Ex.: xx 9xxxx-xxxx"/>
+                <Button text="Save" type="Accept" press="handleSaveBtnPress"></Button>
+				<Button text="Cancel" type="Reject" press="handleCancelBtnPress"></Button>
+              </f:content>
+            </f:SimpleForm>
+</Dialog>
+</c:FragmentDefinition>

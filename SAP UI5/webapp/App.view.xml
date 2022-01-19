@@ -1,45 +1,71 @@
-<mvc:View
-	controllerName="Quickstart.App"
-	displayBlock="true"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
-	<App>
-    
-		<Page title="Agenda" showNavButton="true" navButtonTap="handleNavBack">
-    <content>
-  <HBox justifyContent="">
-    <VBox alignItems="Center">
-    <core:Icon src="sap-icon://add"> </core:Icon>
-    <Label text="SAPUI5 Tutorial" class="myfont"/>
-    <Label text="small paragraph"/>
-    <HBox>
-		<Button
-        text="Click me"
-        width="100%"
-        press="handleButtonPress"
-        >
-        </Button>  
+<mvc:View controllerName="webapp.controller.App" displayBlock="true"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <App>
 
-    <Input
-    id="idMyInput"
-    valueLiveUpdate="true"
-    width="50%"
-    />
-    </HBox>
-    </VBox>
-   
+    <Page title="AGENDA" showNavButton="true" navButtonTap="handleNavBack">
+      <content>
+        <HBox width="100%">
 
- </HBox>
- </content>
-<footer>
-<Toolbar>
-<content>
-<ToolbarSpacer></ToolbarSpacer>
-<Button text="SAVE" press="handleButtonPress"> </Button>
-<ToolbarSpacer></ToolbarSpacer>
-</content>
-</Toolbar>
-    </footer>    
-		</Page>
-	</App>
-</mvc:View>
+          <VBox width="50%">
+
+          </VBox>
+
+          <HBox width="50%" id="div" visible="true" justifyContent="Right">
+            <Label id="divList" />
+          </HBox>
+        </HBox>
+      </content>
+
+      <content>
+        <Table items="{/students}" >
+          <headerToolbar>
+            <Toolbar>
+              <ToolbarSpacer></ToolbarSpacer>
+              <Button icon="sap-icon://add" text="Add Contato" press="handleAddContato"></Button>
+            </Toolbar>
+          </headerToolbar>
+          <columns>
+            <Column>
+              <Text text="Nome"/>
+            </Column>
+            <Column>
+              <Text text="Endereço"/>
+            </Column>
+            <Column>
+              <Text text="Telefone"/>
+            </Column>
+            <Column>
+              <Text text="Editar/Deletar" />
+            </Column>
+          </columns>
+          <items>
+            <ColumnListItem>
+              <cells>
+                <ObjectIdentifier title="{namePerson}"/>
+                <Text text="{address}"/>
+                <Text text="{phone}"/>
+                <HBox>
+                  <Button icon="sap-icon://edit" press="handleEditStudent"></Button>
+                  <Button icon="sap-icon://delete" press="handleDeleteStudent"> </Button>
+                  </HBox>
+                </cells>
+                <Button text="Save" type="Accept" press="handleSaveBtnPress"></Button>
+              </ColumnListItem>
+            </items>
+          </Table>
+
+        </content>
+
+        <footer>
+          <Toolbar>
+            <content>
+              <ToolbarSpacer></ToolbarSpacer>
+
+              <ToolbarSpacer></ToolbarSpacer>
+            </content>
+          </Toolbar>
+        </footer>
+      </Page>
+    </App>
+  </mvc:View>

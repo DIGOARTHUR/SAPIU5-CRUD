@@ -3,7 +3,8 @@ sap.ui.define([
 ], function (XMLView) {
 	"use strict";
 
-	XMLView.create({ viewName: "Quickstart.App" }).then(function (oView) {
+	XMLView.create({ viewName: "webapp.App"
+}).then(function (oView) {
 		oView.placeAt("content");
 	});
 });
