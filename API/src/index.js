@@ -15,9 +15,9 @@ const users = [];
 //             POST
 //**************************** */
 app.post('/cadastrarContato', (request, response) => {
-  const { nome, endereco, telefone } = request.body;
+  const { namePerson, address, phone } = request.body;
 
-  const userExists = users.find(user => user.nome === nome);
+  const userExists = users.find(user => user.namePerson === namePerson);
 
   if (userExists) {
     return response.status(400).json({ error: 'Username already exists' })

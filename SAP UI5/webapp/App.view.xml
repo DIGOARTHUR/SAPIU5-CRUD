@@ -18,10 +18,11 @@
       </content>
 
       <content>
-        <Table items="{/students}" >
+        <Table id="idStudentList" items="{/students}" >
           <headerToolbar>
             <Toolbar>
               <ToolbarSpacer></ToolbarSpacer>
+              <SearchField liveChange="handleStudentSearch"/>
               <Button icon="sap-icon://add" text="Add Contato" press="handleAddContato"></Button>
             </Toolbar>
           </headerToolbar>
