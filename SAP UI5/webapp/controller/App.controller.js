@@ -108,7 +108,7 @@ sap.ui.define([
                   console.log(textStatus);
                }
             });
-                alert("Delete: Success");
+                alert("Dado Deletado com Sucesso!");
 
 
 

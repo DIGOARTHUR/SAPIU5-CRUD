@@ -38,7 +38,7 @@
               <Text text="Telefone"/>
             </Column>
             <Column>
-              <Text text="Editar/Deletar" />
+              <Text text="Deletar" />
             </Column>
           </columns>
           <items>
