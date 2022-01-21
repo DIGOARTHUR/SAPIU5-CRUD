@@ -41,7 +41,7 @@ app.post('/cadastrarContato', (request, response) => {
 //             GET
 //**************************** */
 app.get('/obterContatos', (request, response) => {
-  
+
 
   return response.json(users);
 });
@@ -50,13 +50,22 @@ app.get('/obterContatos', (request, response) => {
 //**************************** */
 //             DELETE
 //**************************** */
-app.delete('/todos/:index', (request, response) => {
- 
-  const {id} = request.params;
-  
-  users.splice(id, 1);
 
-  return response.json({message:"O contato foi deletado"});
+
+app.delete('/todos/:id', (request, response) => {
+  
+  const { id } = request.params;
+
+  const todoIndex = users.findIndex(function (elem, index, array) {
+    if (elem.id == id) {
+      return index
+    }
+  });
+ 
+
+  users.splice(todoIndex, 1);
+
+  return response.status(204).send();
 
 });
 
