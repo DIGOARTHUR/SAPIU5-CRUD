@@ -53,16 +53,17 @@ app.get('/obterContatos', (request, response) => {
 
 
 app.delete('/todos/:id', (request, response) => {
-  
-  const { id } = request.params;
 
-  const todoIndex = users.findIndex(function (elem, index, array) {
-    if (elem.id == id) {
-      return index
-    }
-  });
-  
-  
+  const { id } = request.params;
+ console.log(id)
+
+ const todoIndex= users.findIndex(elem=> elem.id === id);
+
+   console.log(todoIndex)
+  if (todoIndex === -1) {
+    return response.status(404).json({ error: 'Todo not found' });
+  }
+
 
   users.splice(todoIndex, 1);
 
