@@ -3,7 +3,7 @@
   xmlns="sap.m">
   <App>
 
-    <Page title="AGENDA" showNavButton="true" navButtonTap="handleNavBack">
+    <Page title="REGISTRO DE ALUNOS"  navButtonTap="handleNavBack">
       <content>
         <HBox width="100%">
 
@@ -23,6 +23,7 @@
             <Toolbar>
               <ToolbarSpacer></ToolbarSpacer>
               <SearchField liveChange="handleStudentSearch"/>
+              <Button icon="sap-icon://refresh" text="Atualizar Lista" press="handleRefreshContato"></Button>
               <Button icon="sap-icon://add" text="Add Contato" press="handleAddContato"></Button>
             </Toolbar>
           </headerToolbar>
@@ -47,7 +48,7 @@
                 <Text text="{address}"/>
                 <Text text="{phone}"/>
                 <HBox>
-                  <Button icon="sap-icon://edit" press="handleEditStudent"></Button>
+                  
                   <Button icon="sap-icon://delete" press="handleDeleteStudent"> </Button>
                   </HBox>
                 </cells>
