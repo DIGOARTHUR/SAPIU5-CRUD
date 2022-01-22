@@ -64,7 +64,7 @@ apoiado na linguagem JavaScript. O Backend (API) foi desenvolvido utilizando o N
 
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622627-c1eaa513-ca90-49e2-b5b8-c11d369becef.png"> Por quê?  <!---write here : motivation that led to created ; why did you do this program?   -->
-
+Me convidaram para fazer este teste para uma promoção e eu aceitei. Foi um super desafio desenvolver neste Framework chamado SAP UI5, pois me especializo em REACTJS, e a estrutura de arquivos e a proposta de desenvolvimento são completamente diferentes. Não há muito material e a comunidade é bem escassa. Me baseei em vídeos estrangeiros e na própria documentação do Frame para concluir o que foi proposto. 
 
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622723-8e753e71-6bbf-46c3-b1b5-4fcc3d841a88.png"> Algumas observações
