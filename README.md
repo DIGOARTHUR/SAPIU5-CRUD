@@ -70,10 +70,10 @@ apoiado na linguagem JavaScript. O Backend (API) foi desenvolvido utilizando o N
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622723-8e753e71-6bbf-46c3-b1b5-4fcc3d841a88.png"> Algumas observações
 
 :white_check_mark: FrontEnd
-  * Faltou implementar a requisição de update
+  * Faltou implementar a estrutura de Update
   
 :white_check_mark: BackEnd (API)
-  * Faltou implementar a requisição de update
+  * Faltou implementar a requisição de Update (PUT) devido a não encontrar relação com o FrontEnd.
  
  # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/142216697-dd93272c-c614-4664-9d63-c4e4dfc3e0f3.gif"> Rodando a Aplicação
  
@@ -108,7 +108,7 @@ yarn dev
 
 
 :warning: 4. Trocar URL do repositorio remoto (caso necessário)
-
+---
   4.1 Ver qual o repositorio atual
 ```
 git remote -v
@@ -129,7 +129,9 @@ git remote -v
 
 
 <hr>
-<p>
-<h1>  Quero agradecer a BRGAAP por este desafio que me proporcionou aprender mais e mais. </h1>
-<h2>FEITO! </h2>
-</p>
+
+### <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/150655811-55e1f008-012c-4766-bd7e-aac4026aca34.png"> Quero agradecer a BRGAAP por este desafio que me proporcionou aprender mais e mais. 
+### FEITO! 
+
+
+<hr>
