@@ -19,9 +19,8 @@
 
  *  ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-algumas-observações">Algumas observações</a>
 
- *  ## <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-rodando-o-código">Rodando a Aplicação</a>
-     * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#stacks-1">API</a>
-     * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#stacks-1">Interface</a>
+ *  ## <a href="https://github.com/DIGOARTHUR/SAPIU5-CRUD#-rodando-a-aplicação">Rodando a Aplicação</a>
+    
   
 
 
