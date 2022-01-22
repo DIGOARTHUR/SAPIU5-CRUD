@@ -13,12 +13,16 @@
  * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#--api-"> API </a>
 
  * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-pontos-principais-">Pontos Principais</a>
- 
+
+
  * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-por-quê--">Por quê?</a>
 
  *  ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-algumas-observações">Algumas observações</a>
 
- *  ## <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-rodando-o-código">Rodando o código</a>
+ *  ## <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-rodando-o-código">Rodando a Aplicação</a>
+     * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#stacks-1">API</a>
+     * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#stacks-1">Interface</a>
+  
 
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a aplicação <!---write here : talk a little about project: what's does, example.  -->
@@ -29,12 +33,14 @@ apoiado na linguagem JavaScript. O Backend (API) foi desenvolvido utilizando o N
 
 #### Stacks:
 <p align="left">
-  <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/150575090-b35be7e3-1bd2-433b-a3ea-bbd8447a0895.png">
-  <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149677999-f5947f0b-e535-4ba2-911c-1c5926045c35.png">
-  <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663188-8298a9bf-f3ce-4881-944f-e94edf37beed.png">
-  <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663192-19043371-127c-47f0-8553-0f407c51e2c5.png">
-  <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663193-40e11362-c724-49cf-a0b5-a20f98c8e4ba.png">
-  <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663190-ed2a92d6-6853-4884-845e-e780bfc49b55.png">
+ 
+<a href="https://code.visualstudio.com"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/150652026-e2ad0a27-a648-46fa-b640-d182d2e976b6.png"></a>
+  <a href="https://sapui5.hana.ondemand.com"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/150575090-b35be7e3-1bd2-433b-a3ea-bbd8447a0895.png"></a>
+  <a href="https://git-scm.com"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149677999-f5947f0b-e535-4ba2-911c-1c5926045c35.png"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663188-8298a9bf-f3ce-4881-944f-e94edf37beed.png"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663192-19043371-127c-47f0-8553-0f407c51e2c5.png"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663193-40e11362-c724-49cf-a0b5-a20f98c8e4ba.png"></a>
+  <a href="https://nodejs.org/en/"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663190-ed2a92d6-6853-4884-845e-e780bfc49b55.png"></a>
 </p>
 
 
@@ -66,44 +72,53 @@ apoiado na linguagem JavaScript. O Backend (API) foi desenvolvido utilizando o N
 
 :white_check_mark: FrontEnd
   * Faltou implementar a requisição de update
+  
 :white_check_mark: BackEnd (API)
   * Faltou implementar a requisição de update
  
- # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/142216697-dd93272c-c614-4664-9d63-c4e4dfc3e0f3.gif"> Rodando o código
+ # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/142216697-dd93272c-c614-4664-9d63-c4e4dfc3e0f3.gif"> Rodando a Aplicação
  
 
 
 1. Clonar repositório:
 
 ```
-https://github.com/DIGOARTHUR/Proffy---Platafoma-de-Aulas.git
+git clone https://github.com/DIGOARTHUR/SAPIU5-CRUD.git
 ```
+### 2.  API (BackEnd)
+> Acesse a pasta da API e inicialize no VScode.
 
-2. Instalar dependências
-
+2.1  Instalar dependências
 ```
-yarn install
+yarn ou npm
 ```
-
-3. Rodar aplicativo
+2.2 Rodar API
 
 ```
 yarn dev
 ```
 
-4. Acesse http://localhost:3000/ e navegue pelo site
+2.3 Endereço da API http://localhost:3333/
 
-:warning: 5. Trocar URL do repositorio remoto (caso necessário)
+### 3. Interface (FrontEnd)
+> Acesse a pasta SAPUI5 e inicialize no VScode.
 
-  5.1 Ver qual o repositorio atual
+3.1 Baixe a extensão Live Server e acesse o arquivo `index.html`.
+
+3.2 Clique com o botão direito na área do código e inicie a aplicação clicando em Open with Live Server.
+
+
+:warning: 4. Trocar URL do repositorio remoto (caso necessário)
+
+  4.1 Ver qual o repositorio atual
 ```
 git remote -v
 ```
-  5.2 Mudar a URL do repositorio remoto
+  4.2 Mudar a URL do repositorio remoto
 ```
 git remote set-url origin <LinkDoNovoRepositorio>
 ```
-  5.3 Verifique se a mudança foi realizada
+  4.3 Verifique se a mudança foi realizada
 ```
 git remote -v
 ```
