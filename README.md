@@ -70,10 +70,10 @@ Me convidaram para fazer este teste para uma promoção e eu aceitei. Foi um sup
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622723-8e753e71-6bbf-46c3-b1b5-4fcc3d841a88.png"> Algumas observações
 
 :white_check_mark: FrontEnd
-  * Faltou implementar a estrutura de Update
+  * Faltou implementar a estrutura de Update. [mas atende o que foi pedido no teste].
   
 :white_check_mark: BackEnd (API)
-  * Faltou implementar a requisição de Update (PUT) devido a não encontrar relação com o FrontEnd.
+  * Faltou implementar a requisição de Update (PUT).[mas atende o que foi pedido no teste].
  
  # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/142216697-dd93272c-c614-4664-9d63-c4e4dfc3e0f3.gif"> Rodando a Aplicação
  
