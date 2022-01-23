@@ -12,7 +12,7 @@
  
  * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#--api-"> API </a>
 
- * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-pontos-principais-">Pontos Principais</a>
+ * ### <a href="https://github.com/DIGOARTHUR/SAPIU5-CRUD/blob/master/README.md#-pontos-principais-">Pontos Principais</a>
 
 
  * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-por-quê--">Por quê?</a>
