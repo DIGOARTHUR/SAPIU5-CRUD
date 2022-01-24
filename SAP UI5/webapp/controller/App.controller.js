@@ -7,9 +7,11 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("webapp.App", {
-
+        //********************************************** */
+        // FUNÇÃO QUE SE INICIALIZA QUANDO A APLICAÇÃO RODA
+        //*********************************************** */
         onInit: function () {
-
+            //Modelo definido
             this.student = {
                 namePerson: "",
                 address: "",
@@ -22,11 +24,13 @@ sap.ui.define([
                 students: [],
                 student: this.student
             };
-            
-        },
 
+        },
+        //**************************** */
+        // ATUALIZA LISTA CONTATOS - GET
+        //**************************** */
         handleRefreshContato: function () {
-           
+
             var sUrl = "http://localhost:3333/obterContatos";
             var that = this;
 
@@ -37,22 +41,23 @@ sap.ui.define([
                 datatype: "json",
                 success: function (data) {
 
-                   
+                    //Obtem os dados registrados no modelo proposto em onInit()
                     var oViewData = that.getView().getModel().getData();
-                    //REMOVER DADOS ANTERIORES
+                    //Remove dados anteriores da lista
                     for (let i = oViewData.students.length; i > 0; i--) {
                         oViewData.students.pop();
-                      }
-                    //ADICIONAR DADOS DA API
-                    for (var i = 0; i < data.length; i++) {
-                        oViewData.students.push(data[i])
                     }
+                    //Adiciona novamente os dados na lista
+                    data.forEach(element => {
+                        console.log(element)
+                        oViewData.students.push(element)
+                    });
 
                     that.getView().getModel().setData(oViewData);
 
 
                 },
-                error: function (data, textStatus, jqXHR) {
+                error: function (textStatus) {
                     //Caso ocorra um erro ao solicitar dados a função error será chamada                    
                     console.log(textStatus);
                 }
@@ -64,10 +69,14 @@ sap.ui.define([
             var oModel = new sap.ui.model.json.JSONModel(this.data);
             this.getView().setModel(oModel);
         },
-
+        //**************************** */
+        // BUTTON ADICIONA CONTATO  
+        //**************************** */
         handleAddContato: function (oEvent) {
             if (!this.newContactDialog) {
+                //Acessa o xlm da Caixa de Diálogo (register.fragment.xml) contruída.
                 this.newContactDialog = sap.ui.xmlfragment("webapp.register", this);
+                //Obtém o modelo montado na Caixa de Diálogo (register.fragment.xml)
                 var oModel = new sap.ui.model.json.JSONModel();
                 this.newContactDialog.setModel(oModel);
             }
@@ -76,10 +85,13 @@ sap.ui.define([
             this.newContactDialog.open();
 
         },
-
+        //********************************** */
+        // BUTTON DELETA CONTATO LISTA - DELETE
+        //*********************************** */
         handleDeleteStudent: function (oEvent) {
+            //Obtém o objeto específico do botão clicado na tela
             var oCurrentStudent = oEvent.getSource().getBindingContext().getObject();
-            console.log(oCurrentStudent.id)
+            //Obtém os dados do objeto Data do método onInit()
             var oViewData = this.getView().getModel().getData();
             for (var i = 0; i < oViewData.students.length; i++) {
                 var temp = oViewData.students[i];
@@ -88,66 +100,72 @@ sap.ui.define([
                     break;
                 }
             }
+            //Insere os dados Data novamente na tela.
             this.getView().getModel().setData(oViewData);
 
 
-           
+
             //GET API 
             var sUrl = `http://localhost:3333/todos/${oCurrentStudent.id}`;
-       
+
             $.ajax({
-               url: sUrl,
-               type: "DELETE",            
-               contentType: "application/json",
-               dataType: "text",
-               sucess: function (data, textStatus, jqXHR) {
-                  
-               },
-               error: function (data, textStatus, jqXHR) {
-                  //Caso ocorra um erro ao solicitar dados a função error será chamada                    
-                  console.log(textStatus);
-               }
+                url: sUrl,
+                type: "DELETE",
+                contentType: "application/json",
+                dataType: "text",
+                sucess: function (data, textStatus, jqXHR) {
+
+                },
+                error: function (data, textStatus, jqXHR) {
+                    //Caso ocorra um erro ao solicitar dados a função error será chamada                    
+                    console.log(textStatus);
+                }
             });
-                alert("Dado Deletado com Sucesso!");
+            alert("Dado Deletado com Sucesso!");
 
 
 
         },
 
-        handleEditStudent: function (oEvent) {
-            var oCurrentStudent = oEvent.getSource().getBindingContext().getObject(); //Obtém o objetivo específico da linha
-            this.newContactDialog.getModel().setData(oCurrentStudent);
-            this.newContactDialog.open();
-
-
-        },
+     
+        //***************************************** */
+        // BUTTON CANCELAR - CAIXA DIALOGO (ADD CONTATO)
+        //****************************************** */
         handleCancelBtnPress: function () {
             this.newContactDialog.close();
         },
+        //********************************************************* */
+        // BUTTON SAVE CONTATO - CAIXA DE DIALOGO (ADD CONTATO) - POST
+        //********************************************************** */
         handleSaveBtnPress: function (oEvent) {
+            //Obtendo o modelo da Caixa de Diálogo
             var oModel = oEvent.getSource().getModel();
+            //Obtendo os dados do modelo (Caixa de diálogo)(newContactDialog)
             var oDialogData = oModel.getData();
+            //Obtendo o modelo(data) definido no metodo onAfterRendering.
             var oViewData = this.getView().getModel().getData();
+            //Inserindo os dados obtidos da Caixa de Dialogo (newContactDialog) no modelo definido (data) 
             oViewData.students.push(oDialogData);
-            //this.getView().getModel().setData(oViewData); Faz os dados aparecer na lista
+
+            //this.getView().getModel().setData(oViewData); Faz os dados aparecerem na lista
 
             var sUrl = "http://localhost:3333/cadastrarContato";
             $.ajax({
-               url: sUrl,
-               dataType: "json",
-               type: "POST",
-               contentType: 'application/json',
-               data: JSON.stringify(oDialogData),
-               success: function (data, textStatus, xhr) {
-                alert("Contato criado com Sucesso!"+"\n\n" +"Atualize a lista de contatos!");
-                 
-               }
+                url: sUrl,
+                dataType: "json",
+                type: "POST",
+                contentType: 'application/json',
+                data: JSON.stringify(oDialogData),
+                success: function (data, textStatus, xhr) {
+                    alert("Contato criado com Sucesso!" + "\n\n" + "Atualize a lista de contatos!");
+
+                }
             });
             this.newContactDialog.close();
         },
-        //*******************************************************/
-        //
-        //******************************************************/
+        //***********************************/
+        // CAMPO DE PESQUISA LISTA CONTATO
+        //**********************************/
         handleStudentSearch: function (oEvent) {
             var oStudentList = this.getView().byId("idStudentList");
             var oItemsBinding = oStudentList.getBinding("items");
