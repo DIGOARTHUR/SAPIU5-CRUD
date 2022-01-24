@@ -34,11 +34,10 @@ apoiado na linguagem JavaScript. O Backend (API) foi desenvolvido utilizando o N
 <p align="left">
  
 <a href="https://code.visualstudio.com"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/150652026-e2ad0a27-a648-46fa-b640-d182d2e976b6.png"></a>
-  <a href="https://sapui5.hana.ondemand.com"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/150575090-b35be7e3-1bd2-433b-a3ea-bbd8447a0895.png"></a>
   <a href="https://git-scm.com"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149677999-f5947f0b-e535-4ba2-911c-1c5926045c35.png"></a>
+  <a href="https://sapui5.hana.ondemand.com"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/150575090-b35be7e3-1bd2-433b-a3ea-bbd8447a0895.png"></a>
   <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663188-8298a9bf-f3ce-4881-944f-e94edf37beed.png"></a>
   <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663192-19043371-127c-47f0-8553-0f407c51e2c5.png"></a>
-  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/150771767-f7a96ea5-943f-4002-a9a9-c6252590d479.png"></a>
   <a href="https://nodejs.org/en/"> <img  alt="skills"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663190-ed2a92d6-6853-4884-845e-e780bfc49b55.png"></a>
 </p>
 
