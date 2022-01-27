@@ -177,9 +177,13 @@ git clone https://github.com/Daancustodio/sapui5-yeoman-generetor.git
 ### criar prototipo
 
 1- yarn global add yo
+
 2- npm link
+
 3- yarn
+
 4 - yo sapui-5-webapp
+
 cd ..
 
 git clone https://github.com/Daancustodio/ui5-cli.git
@@ -187,12 +191,16 @@ git clone https://github.com/Daancustodio/ui5-cli.git
 - 
 ### criar pagina
 1- yarn
+
 2- npm link
+
 3- yarn global add gluegun
+
 4- cd ..
 
 ### executar criação de pagina
 1- pasta do projeto
+
 2- ui5 g p <nome-da-page>
 
 
