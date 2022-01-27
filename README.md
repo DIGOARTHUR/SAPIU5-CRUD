@@ -167,7 +167,33 @@ git remote set-url origin <LinkDoNovoRepositorio>
 git remote -v
 ```
 
+# Como inicializar um Projeto SAP UI5
 
+- Abra uma pasta e acesse o GitBash
+
+git clone https://github.com/Daancustodio/sapui5-yeoman-generetor.git
+- acesse o arquivo do clone
+
+### criar prototipo
+
+1- yarn global add yo
+2- npm link
+3- yarn
+4 - yo sapui-5-webapp
+cd ..
+
+git clone https://github.com/Daancustodio/ui5-cli.git
+- acesse o arquivo do clone
+- 
+### criar pagina
+1- yarn
+2- npm link
+3- yarn global add gluegun
+4- cd ..
+
+### executar criação de pagina
+1- pasta do projeto
+2- ui5 g p <nome-da-page>
 
 
 
