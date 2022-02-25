@@ -2,26 +2,28 @@
 
 
 
- <h1 align="rigth"> <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/107999728-e6b8a380-6fc6-11eb-82d1-aa090feabaf3.png"></img> Sumário</h1>
 
 
-* ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#--sobre-a-aplicação-">Sobre a aplicação</a>
-  * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#stacks-1">Stacks</a>
-  
- * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#--interfaces-"> Interfaces</a>
- 
- * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#--api-"> API </a>
-
- * ### <a href="https://github.com/DIGOARTHUR/SAPIU5-CRUD/blob/master/README.md#-pontos-principais-">Pontos Principais</a>
 
 
- * ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-por-quê--">Por quê?</a>
-
- *  ### <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-algumas-observações">Algumas observações</a>
-
- *  ## <a href="https://github.com/DIGOARTHUR/SAPIU5-CRUD#-rodando-a-aplicação">Rodando a Aplicação</a>
     
-  
+
+<p align="center">
+  <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#--sobre-a-aplicação-">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#stacks-1"> Stacks</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#--interfaces-"> Interfaces</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#--api-">API</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+ 
+
+</p> 
+
+<p align="center">
+   <a href="https://github.com/DIGOARTHUR/SAPIU5-CRUD/blob/master/README.md#-pontos-principais-">Pontos Principais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-por-quê--">Por quê?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="https://github.com/DIGOARTHUR/SAPIU5/blob/master/README.md#-algumas-observações">Algumas observações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="https://github.com/DIGOARTHUR/SAPIU5-CRUD#-rodando-a-aplicação">Rodando a Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ </p> 
 
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a aplicação <!---write here : talk a little about project: what's does, example.  -->
