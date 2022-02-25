@@ -60,51 +60,8 @@ apoiado na linguagem JavaScript. O Backend (API) foi desenvolvido utilizando o N
   
 ### SAP UI5 
 > O SAPUI5 segue o paradigma "Model View Controller" (MVC), o que significa que separamos claramente as fontes de dados (modelo), a interface do usuário (visualização) e a lógica do aplicativo (controlador) entre si. A vinculação de dados define como os modelos e as visualizações se comunicam.
-> 
-* Divisão de arquivos em:
-  * Controller
-  * XML
-  * HTML 
-* Conexão com API:
-~~~javascript
-            var sUrl = `<Endereço de requisição API>`;
 
-            $.ajax({
-                url: sUrl,
-                type: "<Requisição>",
-                contentType: "application/json",
-                dataType: "text",
-                sucess: function (data, textStatus, jqXHR) {
-                  //Campo para o tratamento e destino dos dados. Utilizar o data
-                },
-                error: function (data, textStatus, jqXHR) {
-                    //Campo caso dê algum erro. Utilizar o textStatus             
-              
-                }
-            });
-~~~
-* Funções e métodos [Controller](https://blogs.sap.com/2018/11/12/sapui5-controller-lifecycle-methods-explained/):
- * `onInit`
-> Chamado quando uma view é instanciada e seus controles (se disponíveis) já foram criados; usado para modificar a exibição antes que ela seja exibida para vincular manipuladores de eventos e fazer outra inicialização única.
-~~~javascript
-onInit: function (){
 
-}
-~~~
-  * `onAfterRendering`
-> Chamado quando a view foi renderizada e, portanto, seu HTML faz parte do documento; usado para fazer manipulações pós-renderização do HTML. Os controles SAPUI5 obtêm esse hook após serem renderizados.
-~~~javascript
-onAfterRendering: function (){
-
-}
-~~~
-❗❗ Gets e Sets
-  * [`Model()`](https://sapui5.hana.ondemand.com/sdk/#/topic/121b8e6337d147af9819129e428f1f75)
-  * [`Data()`](https://sapui5.hana.ondemand.com/1.36.6/docs/guide/91f0c3ee6f4d1014b6dd926db0e91070.html)
-  * [`View()`](https://sapui5.hana.ondemand.com/sdk/#/api/sap.ui.core.mvc.View%23overview)
-  * `Source()`
-  * `Value()`
-  
   
 
 
