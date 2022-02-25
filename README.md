@@ -124,7 +124,7 @@ git remote set-url origin <LinkDoNovoRepositorio>
 git remote -v
 ```
 
-# Como inicializar um Projeto SAP UI5
+<!--# Como inicializar um Projeto SAP UI5
 
 - Abra uma pasta e acesse o GitBash
 
@@ -159,6 +159,8 @@ git clone https://github.com/Daancustodio/ui5-cli.git
 1- pasta do projeto
 
 2- ui5 g p <nome-da-page>
+
+-->
 
 
 
